@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+nav {
+    text-align: right;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+header {
+    text-align: center;
+}
+
+header span {
+    font-size: 6rem;
+}
+
+header .xanh_duong {
+    color: blue;
+}
+
+header .xanh_la {
+    color: green;
+}
+
+header .do {
+    color: red;
+}
+
+header .vang {
+    color: yellow;
+}
+
+main {
+    text-align: center;
+    height: 63vh;
+    margin-top: 20px;
+}
+
+main form input {
+    border: 1px black solid;
+    width: 500px;
+    padding: 5px 5px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 85%);
+    height: 10vh;
+}
+
+footer p {
+    padding: 10px;
+}
