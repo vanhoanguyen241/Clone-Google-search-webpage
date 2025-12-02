@@ -1,6 +1,8 @@
 * {
     margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
     box-sizing: border-box;
 }
 
@@ -14,17 +16,19 @@ nav {
     display: flex;
     justify-content: right;
     align-items: center;
+    padding: 10px 10px;
 }
 
 nav a {
     display: inline-block;
     text-decoration: none;
+    font-size: 20px;
     color: black;
     padding: 10px;
 }
 
 nav img {
-    width: 40px;
+    width: 55px;
     border-radius: 100%;
 }
 
@@ -37,24 +41,9 @@ header {
     justify-content: center;
 }
 
-header .Google_Text {
-    font-size: 8rem;
-}
-
-header #xanh_duong {
-    color: blue;
-}
-
-header #xanh_la {
-    color: green;
-}
-
-header #do {
-    color: red;
-}
-
-header #vang {
-    color: yellow;
+header img {
+    height: 200px;
+    margin-top: 30px;
 }
 
 main {
