@@ -82,7 +82,7 @@ main form input {
 .keyboard_icon {
     width: 40px;
     height: 34px;
-    color: hsl(0, 0%, 30%);
+    fill: hsl(0, 0%, 30%);
     margin: 18px 10px;
     cursor: pointer;
 }
@@ -90,7 +90,7 @@ main form input {
 .mic_icon {
     width: 40px;
     height: 40px;
-    color: hsl(0, 0%, 30%);
+    fill: hsl(0, 0%, 30%);
     margin: 16px 10px;
     cursor: pointer;
 }
@@ -98,7 +98,7 @@ main form input {
 .camera_icon {
     width: 40px;
     height: 36px;
-    color: hsl(0, 0%, 30%);
+    fill: hsl(0, 0%, 30%);
     margin: 16px 10px;
     cursor: pointer;
 }
