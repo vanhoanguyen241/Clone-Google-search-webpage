@@ -87,6 +87,49 @@ main form input {
     cursor: pointer;
 }
 
+.container_chu_thich_1 {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.container_chu_thich_1:hover .chu_thich_1_tam_giac_nho {
+    display: block;
+}
+
+.container_chu_thich_1:hover .chu_thich_1 {
+    display: block;
+}
+
+.chu_thich_1_tam_giac_nho {
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    z-index: 2;
+}
+
+.chu_thich_1 {
+    display: none;
+    font-size: 18px;
+    color: white;
+    width: 135px;
+    height: auto;
+    background-color: black;
+    position: absolute;
+    padding: 10px 10px;
+    top: 60px;
+    left: -37px;
+    z-index: 2;
+}
+
 .mic_icon {
     width: 40px;
     height: 40px;
