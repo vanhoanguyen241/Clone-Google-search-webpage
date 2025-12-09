@@ -318,6 +318,10 @@ footer a {
     padding-right: 20px;
 }
 
+footer a:hover {
+    text-decoration: underline;
+}
+
 .left_links {
     float: left;
 }
