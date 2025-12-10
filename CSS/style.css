@@ -52,7 +52,7 @@ main {
     flex-grow: 1;
 }
 
-main form {
+main form .thanh_tim_kiem {
     display: flex;
     border: 1px rgb(215, 215, 215) solid;
     width: 55vw;
@@ -62,14 +62,18 @@ main form {
     box-shadow: 0px 2px 8px hsl(0, 0%, 90%);
 }
 
-main form img {
+main form .thanh_tim_kiem img {
     margin-top: 23px;
     margin-left: 16.5px;
     height: 25px;
     width: 25px;
 }
 
-main form input {
+main form{
+    height: auto;
+}
+
+main form .thanh_tim_kiem input {
     border: none;
     outline: none;
     width: 29vw;
@@ -287,7 +291,7 @@ main form input {
     color: hsl(0, 0%, 30%);
 }
 
-main form:hover {
+main form .thanh_tim_kiem:hover {
     box-shadow: 0px 0px 12px 1px hsl(0, 0%, 80%);
 }
 
@@ -302,7 +306,7 @@ footer p {
     padding: 20px;
 }
 
-.footer_line_1 {
+.footer_dong_1 {
     border-bottom: 1px hsl(0, 0%, 80%) solid;
     width: 100%;
 }
@@ -323,10 +327,10 @@ footer a:hover {
     text-decoration: underline;
 }
 
-.left_links {
+.links_ben_trai {
     float: left;
 }
 
-.right_links {
+.links_ben_phai {
     float: right;
 }
