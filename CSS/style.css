@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     box-sizing: border-box;
 }
 
@@ -16,25 +16,26 @@ nav {
     display: flex;
     justify-content: right;
     align-items: center;
-    padding: 10px 10px;
+    padding: 4px 10px;
+    height: 10%;
 }
 
 nav a {
     display: inline-block;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 12px;
     color: black;
-    padding: 10px;
+    padding: 6px;
 }
 
 nav .menu {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10px;
+    margin-right: 6px;
 }
 
 nav .menu svg {
@@ -49,7 +50,7 @@ nav .menu:hover {
 }
 
 nav img {
-    width: 55px;
+    width: 30px;
     border-radius: 100%;
 }
 
@@ -60,34 +61,36 @@ nav a:hover {
 header {
     display: flex;
     justify-content: center;
+    height: 30%;
 }
 
 header img {
-    height: 160px;
-    margin-top: 30px;
+    height: 110px;
+    margin-top: 20px;
 }
 
 main {
     margin: 0px auto;
-    margin-top: 20px;
+    margin-top: 15px;
     flex-grow: 1;
+    height: 60%;
 }
 
 main form .thanh_tim_kiem {
     display: flex;
     border: 1px rgb(215, 215, 215) solid;
-    width: 55vw;
-    height: 72px;
+    width: 49vw;
+    height: 45px;
     border-radius: 50px;
     margin-top: 20px;
     box-shadow: 0px 2px 8px hsl(0, 0%, 90%);
 }
 
 main form .thanh_tim_kiem img {
-    margin-top: 23px;
-    margin-left: 16.5px;
-    height: 25px;
-    width: 25px;
+    margin-top: 15.5px;
+    margin-left: 15.5px;
+    height: 13px;
+    width: 13px;
 }
 
 main form {
@@ -98,18 +101,18 @@ main form .thanh_tim_kiem input {
     border: none;
     outline: none;
     width: 29vw;
-    height: 70px;
-    margin-left: 15px;
+    height: 43px;
+    margin-left: 7px;
     padding: 5px 5px;
     border-radius: 50px;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .keyboard_icon {
-    width: 40px;
-    height: 34px;
+    width: 28px;
+    height: 22px;
     fill: hsl(0, 0%, 30%);
-    margin: 18px 10px;
+    margin: 11px 7px;
     cursor: pointer;
 }
 
@@ -131,28 +134,29 @@ main form .thanh_tim_kiem input {
     display: none;
     width: 0;
     height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid black;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid black;
     margin-top: 10px;
     margin-left: 10px;
     position: absolute;
-    top: 40px;
-    left: 10px;
+    top: 24px;
+    left: 5.5px;
     z-index: 2;
 }
 
 .chu_thich_1 {
     display: none;
-    font-size: 18px;
+    font-size: 10px;
+    font-weight: bold;
     color: white;
-    width: 135px;
+    width: 80px;
     height: auto;
     background-color: black;
     position: absolute;
-    padding: 10px 10px;
-    top: 60px;
-    left: -37px;
+    padding: 5px 5px;
+    top: 40px;
+    left: -20px;
     z-index: 2;
 }
 
@@ -174,28 +178,29 @@ main form .thanh_tim_kiem input {
     display: none;
     width: 0;
     height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid black;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid black;
     margin-top: 10px;
     margin-left: 10px;
     position: absolute;
-    top: 40px;
-    left: 10px;
+    top: 24px;
+    left: 3px;
     z-index: 2;
 }
 
 .chu_thich_2 {
     display: none;
-    font-size: 18px;
+    font-size: 10px;
+    font-weight: bold;
     color: white;
-    width: 220px;
+    width: 130px;
     height: auto;
     background-color: black;
     position: absolute;
-    padding: 10px 10px;
-    top: 60px;
-    left: -80px;
+    padding: 5px 5px;
+    top: 40px;
+    left: -47px;
     z-index: 2;
 }
 
@@ -217,52 +222,54 @@ main form .thanh_tim_kiem input {
     display: none;
     width: 0;
     height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid black;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid black;
     margin-top: 10px;
     margin-left: 10px;
     position: absolute;
-    top: 40px;
-    left: 10px;
+    top: 24px;
+    left: 5px;
     z-index: 2;
 }
 
 .chu_thich_3 {
     display: none;
-    font-size: 18px;
+    font-size: 10px;
+    font-weight: bold;
     color: white;
-    width: 220px;
+    width: 125px;
     height: auto;
     background-color: black;
     position: absolute;
-    padding: 10px 10px;
-    top: 60px;
-    left: -80px;
+    padding: 5px 5px;
+    top: 40px;
+    left: -42px;
     z-index: 2;
 }
 
 .mic_icon {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     fill: hsl(0, 0%, 30%);
-    margin: 16px 10px;
+    margin: 10px 7px;
     cursor: pointer;
 }
 
 .camera_icon {
-    width: 40px;
-    height: 36px;
+    width: 28px;
+    height: 24px;
     fill: hsl(0, 0%, 30%);
-    margin: 16px 10px;
+    margin: 11px 7px;
     cursor: pointer;
 }
 
 .che_do_ai {
-    width: 160px;
-    height: 40px;
-    margin-left: 10px;
-    margin-top: 16px;
+    width: 85px;
+    height: 25px;
+    margin-left: 7px;
+    margin-right: 10px;
+    margin-top: 9.5px;
     background-color: hsl(0, 0%, 95%);
     border-radius: 20px;
     cursor: pointer;
@@ -270,7 +277,7 @@ main form .thanh_tim_kiem input {
 }
 
 .che_do_ai:hover {
-    border-width: 3px;
+    border-width: 1.5px;
     border-style: solid;
     animation: ai_icon_animation 2s infinite;
 }
@@ -298,8 +305,9 @@ main form .thanh_tim_kiem input {
 }
 
 .search_ai_icon {
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
     margin-left: 5px;
     fill: hsl(0, 0%, 30%);
     float: left;
@@ -308,8 +316,8 @@ main form .thanh_tim_kiem input {
 .ai_text {
     float: left;
     margin-top: 6px;
-    font-size: 24px;
-    color: hsl(0, 0%, 30%);
+    font-size: 12px;
+    color: black;
 }
 
 main form .thanh_tim_kiem:hover {
@@ -317,14 +325,14 @@ main form .thanh_tim_kiem:hover {
 }
 
 main form .button_container {
-    width: 500px;
-    margin: 30px auto;
+    width: 350px;
+    margin: 20px 22%;
 }
 
 .button_container .tim_tren_gg,
 .button_container .xem_trang_dau_tien {
-    font-size: 18px;
-    padding: 10px 20px;
+    font-size: 13px;
+    padding: 10px 15px;
     margin: 5px;
     border: none;
     border-radius: 5px;
@@ -335,17 +343,24 @@ main form .button_container {
 .button_container .tim_tren_gg:hover,
 .button_container .xem_trang_dau_tien:hover {
     border: 1px hsl(0, 0%, 90%) solid;
+    background-color: hsl(210, 17%, 98%);
     box-shadow: 0px 2px 2px hsl(0, 0%, 90%);
 }
 
 main .ngon_ngu_ho_tro {
-    text-align: center;
-    font-size: 14px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 25%;
     color: hsl(0, 0%, 30%);
+}
+
+main .ngon_ngu_ho_tro span {
+    font-size: 12px;
 }
 
 main .ngon_ngu_ho_tro a {
     text-decoration: none;
+    font-size: 12px;
     color: hsl(245, 86%, 36%);
 }
 
@@ -356,12 +371,13 @@ main .ngon_ngu_ho_tro a:hover {
 footer {
     display: block;
     background-color: hsl(0, 0%, 95%);
-    height: 15vh;
+    height: 30%;
 }
 
 footer p {
     margin-left: 10px;
-    padding: 20px;
+    font-size: 13px;
+    padding: 15px;
 }
 
 .footer_dong_1 {
@@ -370,15 +386,17 @@ footer p {
 }
 
 .footer_links {
-    line-height: 20px;
-    margin: 20px;
+    margin-left: 30px;
 }
 
 footer a {
+    display: inline-block;
     text-decoration: none;
     color: black;
-    margin-left: 15px;
-    padding-right: 20px;
+    font-size: 13px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px;
 }
 
 footer a:hover {
