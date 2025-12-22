@@ -61,6 +61,7 @@ nav a:hover {
 header {
     display: flex;
     justify-content: center;
+    width: 100%;
     height: 30%;
 }
 
@@ -73,14 +74,26 @@ main {
     margin: 0px auto;
     margin-top: 15px;
     flex-grow: 1;
+    width: 100%;
     height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 main form .thanh_tim_kiem {
     display: flex;
     border: 1px rgb(215, 215, 215) solid;
-    width: 49vw;
+    width: 688px;
     height: 45px;
+    max-width: 90%;
     border-radius: 50px;
     margin-top: 20px;
     box-shadow: 0px 2px 8px hsl(0, 0%, 90%);
@@ -100,8 +113,8 @@ main form {
 main form .thanh_tim_kiem input {
     border: none;
     outline: none;
-    width: 29vw;
     height: 43px;
+    flex-grow: 1;
     margin-left: 7px;
     padding: 5px 5px;
     border-radius: 50px;
@@ -265,6 +278,9 @@ main form .thanh_tim_kiem input {
 }
 
 .che_do_ai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 85px;
     height: 25px;
     margin-left: 7px;
@@ -307,15 +323,13 @@ main form .thanh_tim_kiem input {
 .search_ai_icon {
     width: 20px;
     height: 20px;
-    margin-top: 3px;
-    margin-left: 5px;
+    width: 20px;
+    height: 20px;
     fill: hsl(0, 0%, 30%);
-    float: left;
+    margin-right: 5px;
 }
 
 .ai_text {
-    float: left;
-    margin-top: 6px;
     font-size: 12px;
     color: black;
 }
@@ -325,8 +339,11 @@ main form .thanh_tim_kiem:hover {
 }
 
 main form .button_container {
-    width: 350px;
-    margin: 20px 22%;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .button_container .tim_tren_gg,
@@ -334,7 +351,7 @@ main form .button_container {
     font-size: 13px;
     padding: 10px 15px;
     margin: 5px;
-    border: none;
+    border: 1px transparent solid;
     border-radius: 5px;
     background-color: hsl(210, 17%, 97%);
     cursor: pointer;
@@ -348,9 +365,7 @@ main form .button_container {
 }
 
 main .ngon_ngu_ho_tro {
-    display: inline-block;
     margin-top: 20px;
-    margin-left: 25%;
     color: hsl(0, 0%, 30%);
 }
 
@@ -386,7 +401,9 @@ footer p {
 }
 
 .footer_links {
-    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
 }
 
 footer a {
@@ -401,12 +418,4 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-}
-
-.links_ben_trai {
-    float: left;
-}
-
-.links_ben_phai {
-    float: right;
 }
