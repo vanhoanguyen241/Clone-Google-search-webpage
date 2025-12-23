@@ -172,6 +172,11 @@ main form .thanh_tim_kiem input {
     z-index: 2;
 }
 
+.english_page .chu_thich_1 {
+    width: 84px;
+    left: -21px;
+}
+
 .container_chu_thich_2 {
     position: relative;
     display: inline-block;
@@ -216,6 +221,11 @@ main form .thanh_tim_kiem input {
     z-index: 2;
 }
 
+.english_page .chu_thich_2 {
+    width: 87px;
+    left: -28px;
+}
+
 .container_chu_thich_3 {
     position: relative;
     display: inline-block;
@@ -258,6 +268,11 @@ main form .thanh_tim_kiem input {
     top: 41px;
     left: -42px;
     z-index: 2;
+}
+
+.english_page .chu_thich_3 {
+    width: 90px;
+    left: -26px;
 }
 
 .mic_icon {
