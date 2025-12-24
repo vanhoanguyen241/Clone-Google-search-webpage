@@ -172,19 +172,16 @@ main form .thanh_tim_kiem input {
     z-index: 2;
 }
 
-.english_page .chu_thich_1 {
-    width: 84px;
-    left: -21px;
+.english_page .keyboard_icon {
+    display: none;
 }
 
-.france_page .chu_thich_1 {
-    width: 45px;
-    left: -1px;
+.france_page .keyboard_icon {
+    display: none;
 }
 
-.chinese_page .chu_thich_1 {
-    width: 50px;
-    left: -3px;
+.chinese_page .keyboard_icon {
+    display: none;
 }
 
 .container_chu_thich_2 {
