@@ -1,7 +1,7 @@
 # Google Search Clone 🔍
 
-![Project Banner](<img width="1919" height="955" alt="image" src="https://github.com/user-attachments/assets/a0738f15-97c7-4099-844c-75ad8a740fa1" />
-)
+<img width="1919" height="955" alt="image" src="https://github.com/user-attachments/assets/c647666f-2c9a-497d-9f04-7e7070ec294c" />
+
 
 ## 📖 Giới thiệu (Introduction)
 Đây là dự án tái tạo lại giao diện trang chủ Google Search (Google Search Homepage Clone). Dự án được xây dựng nhằm mục đích học tập, rèn luyện kỹ năng cắt web (PSD to HTML) và tư duy Responsive Design.
