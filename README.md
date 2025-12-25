@@ -8,12 +8,12 @@
 
 Giao diện được thiết kế để hiển thị tốt trên cả Desktop, Tablet và Mobile, mô phỏng các hành vi tương tác như menu thả xuống, hiệu ứng hover, focus input.
 
-🔗 [**Demo trực tiếp:**](https://github.com/vanhoanguyen241/Clone-Google-search-webpage)
+🔗 **Demo trực tiếp:** [Bấm vào đây để xem trang web](https://vanhoanguyen241.github.io/Clone-Google-search-webpage/HTML/index_vi.html)
 
 ## ✨ Tính năng chính (Features)
-- **Responsive Design:** Tự động tương thích với mọi kích thước màn hình (Mobile First/Desktop First).
-- **Google Apps Menu:** Menu 9 chấm sử dụng CSS Grid và JavaScript để bật tắt.
-- **Hiệu ứng UI:** Các hiệu ứng Hover, Focus giống bản gốc 99%.
+- **Responsive Design:** Tự động tương thích với mọi kích thước màn hình (Mobile First/Desktop First) (đang thực hiện).
+- **Google Apps Menu:** Menu 9 chấm sử dụng CSS Grid và JavaScript để bật tắt (đang thực hiện).
+- **Hiệu ứng UI:** Các hiệu ứng Hover, Focus giống bản gốc 99% (đang thực hiện).
 - **Đa ngôn ngữ:** Hỗ trợ giao diện Tiếng Việt và Tiếng Anh (sử dụng CSS override).
 - **Tooltips:** Hiển thị chú thích khi di chuột vào các icon.
 
@@ -21,9 +21,9 @@ Giao diện được thiết kế để hiển thị tốt trên cả Desktop, T
 - **HTML5:** Xây dựng cấu trúc ngữ nghĩa (Semantic HTML).
 - **CSS3:**
   - **Flexbox:** Căn chỉnh bố cục chính (Header, Footer, Search Bar).
-  - **CSS Grid:** Xây dựng layout cho Menu ứng dụng (đang thực hiện).
-  - **CSS Animation:** Hiệu ứng xoay viền (Gradient Border) cho nút AI (đang thực hiện).
-- **JavaScript (Vanilla):** Xử lý sự kiện click, toggle class cho menu (đang thực hiện).
+  - **CSS Grid:** Xây dựng layout cho Menu ứng dụng.
+  - **CSS Animation:** Hiệu ứng xoay viền (Gradient Border) cho nút AI.
+- **JavaScript (Vanilla):** Xử lý sự kiện click, toggle class cho menu.
 
 ## 🚀 Cài đặt & Chạy (Installation)
 1. Clone dự án về máy:
