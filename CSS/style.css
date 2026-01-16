@@ -87,7 +87,7 @@ main form {
     width: 100%;
 }
 
-main form .thanh_tim_kiem {
+main form .search_bar {
     display: flex;
     border: 1px rgb(215, 215, 215) solid;
     width: 688px;
@@ -98,7 +98,7 @@ main form .thanh_tim_kiem {
     box-shadow: 0px 2px 8px hsl(0, 0%, 90%);
 }
 
-main form .thanh_tim_kiem img {
+main form .search_bar img {
     margin-top: 18px;
     margin-left: 15.5px;
     height: 13px;
@@ -109,7 +109,7 @@ main form {
     height: auto;
 }
 
-main form .thanh_tim_kiem input {
+main form .search_bar input {
     border: none;
     outline: none;
     height: 48px;
@@ -128,21 +128,21 @@ main form .thanh_tim_kiem input {
     cursor: pointer;
 }
 
-.container_chu_thich_1 {
+.note_1_container {
     position: relative;
     display: inline-block;
     z-index: 1;
 }
 
-.container_chu_thich_1:hover .chu_thich_1_tam_giac_nho {
+.note_1_container:hover .note_1_triangle {
     display: block;
 }
 
-.container_chu_thich_1:hover .chu_thich_1 {
+.note_1_container:hover .note_1 {
     display: block;
 }
 
-.chu_thich_1_tam_giac_nho {
+.note_1_triangle {
     display: none;
     width: 0;
     height: 0;
@@ -157,7 +157,7 @@ main form .thanh_tim_kiem input {
     z-index: 2;
 }
 
-.chu_thich_1 {
+.note_1 {
     display: none;
     font-size: 10px;
     font-weight: bold;
@@ -184,21 +184,21 @@ main form .thanh_tim_kiem input {
     display: none;
 }
 
-.container_chu_thich_2 {
+.note_2_container {
     position: relative;
     display: inline-block;
     z-index: 1;
 }
 
-.container_chu_thich_2:hover .chu_thich_2_tam_giac_nho {
+.note_2_container:hover .note_2_triangle {
     display: block;
 }
 
-.container_chu_thich_2:hover .chu_thich_2 {
+.note_2_container:hover .note_2 {
     display: block;
 }
 
-.chu_thich_2_tam_giac_nho {
+.note_2_triangle {
     display: none;
     width: 0;
     height: 0;
@@ -213,7 +213,7 @@ main form .thanh_tim_kiem input {
     z-index: 2;
 }
 
-.chu_thich_2 {
+.note_2 {
     display: none;
     font-size: 10px;
     font-weight: bold;
@@ -228,36 +228,36 @@ main form .thanh_tim_kiem input {
     z-index: 2;
 }
 
-.english_page .chu_thich_2 {
+.english_page .note_2 {
     width: 87px;
     left: -28px;
 }
 
-.france_page .chu_thich_2 {
+.france_page .note_2 {
     width: 140px;
     left: -53px;
 }
 
-.chinese_page .chu_thich_2 {
+.chinese_page .note_2 {
     width: 50px;
     left: -5px;
 }
 
-.container_chu_thich_3 {
+.note_3_container {
     position: relative;
     display: inline-block;
     z-index: 1;
 }
 
-.container_chu_thich_3:hover .chu_thich_3_tam_giac_nho {
+.note_3_container:hover .note_3_triangle {
     display: block;
 }
 
-.container_chu_thich_3:hover .chu_thich_3 {
+.note_3_container:hover .note_3 {
     display: block;
 }
 
-.chu_thich_3_tam_giac_nho {
+.note_3_triangle {
     display: none;
     width: 0;
     height: 0;
@@ -272,7 +272,7 @@ main form .thanh_tim_kiem input {
     z-index: 2;
 }
 
-.chu_thich_3 {
+.note_3 {
     display: none;
     font-size: 10px;
     font-weight: bold;
@@ -287,17 +287,17 @@ main form .thanh_tim_kiem input {
     z-index: 2;
 }
 
-.english_page .chu_thich_3 {
+.english_page .note_3 {
     width: 90px;
     left: -26px;
 }
 
-.france_page .chu_thich_3 {
+.france_page .note_3 {
     width: 112px;
     left: -38px;
 }
 
-.chinese_page .chu_thich_3 {
+.chinese_page .note_3 {
     width: 50px;
     left: -5px;
 }
@@ -318,7 +318,7 @@ main form .thanh_tim_kiem input {
     cursor: pointer;
 }
 
-.che_do_ai {
+.ai_mode {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -333,7 +333,7 @@ main form .thanh_tim_kiem input {
     z-index: 1;
 }
 
-.che_do_ai:hover {
+.ai_mode:hover {
     border-width: 1.5px;
     border-style: solid;
     animation: ai_icon_animation 2s infinite;
@@ -361,7 +361,7 @@ main form .thanh_tim_kiem input {
     }
 }
 
-.search_ai_icon {
+.ai_search_icon {
     width: 20px;
     height: 20px;
     width: 20px;
@@ -374,7 +374,7 @@ main form .thanh_tim_kiem input {
     color: black;
 }
 
-main form .thanh_tim_kiem:hover {
+main form .search_bar:hover {
     box-shadow: 0px 0px 12px 1px hsl(0, 0%, 80%);
 }
 
@@ -386,8 +386,8 @@ main form .button_container {
     gap: 10px;
 }
 
-.button_container .tim_tren_gg,
-.button_container .xem_trang_dau_tien {
+.button_container .search_on_google,
+.button_container .first_page {
     padding: 10px 15px;
     margin: 5px;
     margin-top: 15px;
@@ -397,24 +397,24 @@ main form .button_container {
     cursor: pointer;
 }
 
-.button_container .tim_tren_gg:hover,
-.button_container .xem_trang_dau_tien:hover {
+.button_container .search_on_google:hover,
+.button_container .first_page:hover {
     border: 1px hsl(0, 0%, 90%) solid;
     background-color: hsl(210, 17%, 98%);
     box-shadow: 0px 2px 2px hsl(0, 0%, 90%);
 }
 
-main .ngon_ngu_ho_tro {
+main .support_language {
     margin-top: 40px;
     color: hsl(0, 0%, 30%);
 }
 
-main .ngon_ngu_ho_tro a {
+main .support_language a {
     text-decoration: none;
     color: hsl(245, 86%, 36%);
 }
 
-main .ngon_ngu_ho_tro a:hover {
+main .support_language a:hover {
     text-decoration: underline;
 }
 
@@ -430,7 +430,7 @@ footer p {
     padding: 15px;
 }
 
-.footer_dong_1 {
+.line_1_footer {
     border-bottom: 1px hsl(0, 0%, 80%) solid;
     width: 100%;
 }
