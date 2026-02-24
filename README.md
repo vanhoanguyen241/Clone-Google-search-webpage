@@ -8,7 +8,7 @@
 
 Giao diện được thiết kế để hiển thị tốt trên cả Desktop, Tablet và Mobile, mô phỏng các hành vi tương tác như menu thả xuống, hiệu ứng hover, focus input.
 
-🔗 **Demo trực tiếp:** [Bấm vào đây để xem trang web](https://vanhoanguyen241.github.io/Clone-Google-search-webpage/index_vi.html)
+🔗 **Demo trực tiếp:** [Bấm vào đây để xem trang web](https://vanhoanguyen241.github.io/Clone-Google-search-webpage/)
 
 ## 🔗 Tính năng chính (Features)
 - **Responsive Design:** Tự động tương thích với mọi kích thước màn hình (Mobile First/Desktop First) (đang thực hiện).
