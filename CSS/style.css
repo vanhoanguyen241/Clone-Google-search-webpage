@@ -575,15 +575,83 @@ footer p {
     padding: 0px 30px;
 }
 
-footer a {
+footer a, footer .settings_text {
     display: inline-block;
     text-decoration: none;
     color: black;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-right: 25px;
+    cursor: pointer;
 }
 
-footer a:hover {
+footer a:hover, footer .settings_text:hover {
     text-decoration: underline;
+}
+
+footer .settings {
+    position: relative;
+    display: inline-block;
+}
+
+footer .settings_menu_container {
+    display: none;
+    position: absolute;
+    min-width: 235px;
+    bottom: 45px;
+    right: 0px;
+    padding-top: 7px;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 0px 8px hsl(0, 0%, 70%);
+    border-radius: 7px;
+    z-index: 4;
+    text-align: left;
+}
+
+footer .settings_menu_container a, .dark_mode_off, .dark_mode_on {
+    padding: 8px 15px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .settings_menu_container a:hover, .dark_mode_settings:hover {
+    background-color: hsl(0, 0%, 95%);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer .settings_menu_container .dark_mode_settings:hover .dark_mode_off>.sun_icon {
+    display: flex;
+}
+
+footer .settings_menu_container .dark_mode_settings:hover .dark_mode_on>.moon_icon {
+    display: flex;
+}
+
+footer .settings_menu_container .dark_mode_settings {
+    border-top: 1px hsl(0, 0%, 80%) solid;
+    padding: 8px 0px;
+    line-height: 25px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 10,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 14;
+}
+
+footer .settings_menu_container .dark_mode_settings .dark_mode_off>.sun_icon, footer .settings_menu_container .dark_mode_settings .dark_mode_on>.moon_icon {
+    display: none;
+    color: hsl(0, 0%, 50%);
+}
+
+footer .settings_menu_container .dark_mode_settings .dark_mode_on {
+    display: none;
 }
