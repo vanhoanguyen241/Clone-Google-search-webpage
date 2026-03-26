@@ -4,12 +4,76 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     box-sizing: border-box;
+    color: var(--text-primary);
+}
+
+:root {
+    /* THANH NAV */
+    --text-dropdown-menu-container: #0B57D0;
+    --menu-hover-bg: hsl(0, 0%, 90%);
+    --bg-dropdown-menu-container: #e9eef6;
+    --bg-dropdown-menu-1-2-container: #f8fafd;
+    --bg-webkit-scrollbar-thumb: #dadce0;
+    --webkit-scrollbar-thumb-hover-color: #bdc1c6;
+    --apps-hover-bg: #f0f4f9;
+    --bg-dropdown-menu-container-button: transparent;
+    --dropdown-menu-container-button-hover-bg: whitesmoke;
+    --bg-nav-button: #0B57D0;
+    --nav-button-hover-bg: hsl(217, 90%, 47%);
+    --border-dropdown-menu-container: hsl(0, 0%, 80%);
+    --border-dropdown-menu-container-button: black;
+    --border-dropdown-menu-container-button-hover: hsl(217, 100%, 70%);
+    --shadow-nav-button-hover: 0px 2px 2px hsl(0, 0%, 60%);
+
+    /* TRANG CHÍNH & FOOTER */
+    /* Nền tổng thể & Khối */
+    --bg-main: #ffffff;
+    --bg-footer: hsl(0, 0%, 95%);
+    --bg-ai-mode: hsl(0, 0%, 95%);
+    --bg-search-button: hsl(210, 17%, 97%);
+    --bg-search-button-hover: hsl(210, 17%, 98%);
+    --bg-settings-menu: #ffffff;
+    --bg-settings-menu-hover: hsl(0, 0%, 95%);
+    --tooltip-bg: #000000;
+
+    /* Màu chữ */
+    --text-primary: #202124;
+    --text-secondary: #ffffff;
+    --text-footer: #000000;
+    --text-support-lang: hsl(0, 0%, 30%);
+    --link-color: hsl(245, 86%, 36%);
+    --tooltip-text: #ffffff;
+
+    /* Màu Icon SVG */
+    --svg-color: hsl(0, 0%, 30%);
+    --icon-dark-mode: hsl(0, 0%, 50%);
+
+    /* Màu viền (Border) */
+    --border-color: #dadce0;
+    --border-search_bar: rgb(215, 215, 215);
+    --border-footer-line: hsl(0, 0%, 80%);
+    --border-dark-mode-settings: hsl(0, 0%, 80%);
+    --border-search-button: transparent;
+    --border-search-button-hover: hsl(0, 0%, 90%);
+    
+    /* Màu viền khi hover AI Mode */
+    --ai-anim-1: red;
+    --ai-anim-2: blue;
+    --ai-anim-3: green;
+    --ai-anim-4: orange;
+
+    /* Đổ bóng (Shadow) */
+    --shadow-search-bar: 0px 2px 8px hsl(0, 0%, 90%);
+    --shadow-search-bar-hover: 0px 0px 12px 1px hsl(0, 0%, 80%);
+    --shadow-search-button-hover: 0px 2px 2px hsl(0, 0%, 90%);
+    --shadow-settings-menu: 0px 0px 8px hsl(0, 0%, 70%);
 }
 
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: var(--bg-main);
 }
 
 nav {
@@ -23,7 +87,7 @@ nav {
 nav a {
     display: inline-block;
     text-decoration: none;
-    color: black;
+    color: var(--text-primary);
     padding: 8px;
 }
 
@@ -41,12 +105,12 @@ nav .menu {
 nav .menu svg {
     width: 35px;
     height: 35px;
-    fill: hsl(0, 0%, 30%);
+    fill: var(--svg-color);
     cursor: pointer;
 }
 
 nav .menu:hover {
-    background-color: hsl(0, 0%, 90%);
+    background-color: var(--menu-hover-bg);
 }
 
 nav .dropdown_menu_container {
@@ -54,8 +118,8 @@ nav .dropdown_menu_container {
     position: absolute;
     top: 65px;
     right: 35px;
-    background-color: #e9eef6;
-    border: 1px hsl(0, 0%, 80%) solid;
+    background-color: var(--bg-dropdown-menu-container);
+    border: 1px var(--border-dropdown-menu-container) solid;
     border-radius: 30px;
     padding: 10px 2px 10px 10px;
     z-index: 3;
@@ -72,7 +136,7 @@ nav .dropdown_menu_1_container {
 nav .dropdown_menu_1_container, nav .dropdown_menu_2_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-color: #f8fafd;
+    background-color: var(--bg-dropdown-menu-1-2-container);
     padding-top: 30px;
 }
 
@@ -84,28 +148,24 @@ nav .dropdown_menu_2_container {
     border-radius: 5px 5px 25px 25px;
 }
 
-/* 1. Chỉnh độ rộng của thanh trượt */
 nav .dropdown_menu_container::-webkit-scrollbar {
     width: 6px;
 }
 
-/* 2. Chỉnh cái rãnh (Track) */
 nav .dropdown_menu_container::-webkit-scrollbar-track {
-    background: transparent; /* Cho cái rãnh trong suốt để không lẹm vào màu nền */
+    background: transparent; 
     border-radius: 10px;
     margin-top: 25px;
     margin-bottom: 25px;
 }
 
-/* 3. Chỉnh cái cục lăn (Thumb) */
 nav .dropdown_menu_container::-webkit-scrollbar-thumb {
-    background-color: #dadce0;
-    border-radius: 10px; /* Bo tròn 2 đầu cục lăn */
+    background-color: var(--bg-webkit-scrollbar-thumb);
+    border-radius: 10px;
 }
 
-/* 4. Hiệu ứng khi di chuột vào cục lăn */
 nav .dropdown_menu_container::-webkit-scrollbar-thumb:hover {
-    background-color: #bdc1c6;
+    background-color: var(--webkit-scrollbar-thumb-hover-color);
 }
 
 nav .apps {
@@ -128,7 +188,7 @@ nav .apps>p {
 }
 
 nav .apps:hover {
-    background-color: #f0f4f9;
+    background-color: var(--apps-hover-bg);
     border-radius: 20px;
     min-height: 88px;
     height: auto;
@@ -148,38 +208,38 @@ nav .apps>img {
 
 nav .dropdown_menu_container p>a {
     text-decoration: none;
-    color: #0B57D0;
+    color: var(--text-dropdown-menu-container);
 }
 
 nav .dropdown_menu_container button {
-    color: #0B57D0;
+    color: var(--text-dropdown-menu-container);
     padding: 12px 15px;
-    border: 1px black solid;
+    border: 1px var(--border-dropdown-menu-container-button) solid;
     border-radius: 20px;
-    background-color: transparent;
+    background-color: var(--bg-dropdown-menu-container-button);
     margin: 20px 0px 12px 0px;
     cursor: pointer;
 }
 
 nav .dropdown_menu_container button:hover {
-    border: 1px hsl(217, 100%, 70%) solid;
-    background-color: whitesmoke;
+    border: 1px var(--border-dropdown-menu-container-button-hover) solid;
+    background-color: var(--dropdown-menu-container-button-hover-bg);
     box-shadow: none;
     cursor: pointer;
 }
 
 nav button {
-    color: white;
+    color: var(--text-secondary);
     padding: 12px 15px;
     border: 1px transparent solid;
     border-radius: 20px;
-    background-color: #0B57D0;
+    background-color: var(--bg-nav-button);
     cursor: pointer;
 }
 
 nav button:hover {
-    background-color: hsl(217, 90%, 47%);
-    box-shadow: 0px 2px 2px hsl(0, 0%, 60%);
+    background-color: var(--nav-button-hover-bg);
+    box-shadow: var(--shadow-nav-button-hover);
 }
 
 nav img {
@@ -219,17 +279,18 @@ main form {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: auto;
 }
 
 main form .search_bar {
     display: flex;
-    border: 1px rgb(215, 215, 215) solid;
+    border: 1px var(--border-search_bar) solid;
     width: 688px;
     height: 50px;
     max-width: 90%;
     border-radius: 50px;
     margin-top: 20px;
-    box-shadow: 0px 2px 8px hsl(0, 0%, 90%);
+    box-shadow: var(--shadow-search-bar);
 }
 
 main form .search_bar img {
@@ -237,10 +298,6 @@ main form .search_bar img {
     margin-left: 15.5px;
     height: 13px;
     width: 13px;
-}
-
-main form {
-    height: auto;
 }
 
 main form .search_bar input {
@@ -252,12 +309,14 @@ main form .search_bar input {
     padding: 5px 5px;
     border-radius: 50px;
     font-size: 1.5rem;
+    background-color: transparent;
+    color: var(--text-primary);
 }
 
 .keyboard_icon {
     width: 28px;
     height: 22px;
-    fill: hsl(0, 0%, 30%);
+    fill: var(--svg-color);
     margin: 13px 7px;
     cursor: pointer;
 }
@@ -268,10 +327,7 @@ main form .search_bar input {
     z-index: 1;
 }
 
-.note_1_container:hover .note_1_triangle {
-    display: block;
-}
-
+.note_1_container:hover .note_1_triangle,
 .note_1_container:hover .note_1 {
     display: block;
 }
@@ -282,7 +338,7 @@ main form .search_bar input {
     height: 0;
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
-    border-bottom: 6px solid black;
+    border-bottom: 6px solid var(--tooltip-bg);
     margin-top: 10px;
     margin-left: 10px;
     position: absolute;
@@ -295,10 +351,10 @@ main form .search_bar input {
     display: none;
     font-size: 10px;
     font-weight: bold;
-    color: white;
+    color: var(--tooltip-text);
     width: 80px;
     height: auto;
-    background-color: black;
+    background-color: var(--tooltip-bg);
     position: absolute;
     padding: 5px 5px;
     top: 41px;
@@ -306,14 +362,8 @@ main form .search_bar input {
     z-index: 2;
 }
 
-.english_page .keyboard_icon {
-    display: none;
-}
-
-.france_page .keyboard_icon {
-    display: none;
-}
-
+.english_page .keyboard_icon,
+.france_page .keyboard_icon,
 .chinese_page .keyboard_icon {
     display: none;
 }
@@ -324,10 +374,7 @@ main form .search_bar input {
     z-index: 1;
 }
 
-.note_2_container:hover .note_2_triangle {
-    display: block;
-}
-
+.note_2_container:hover .note_2_triangle,
 .note_2_container:hover .note_2 {
     display: block;
 }
@@ -338,7 +385,7 @@ main form .search_bar input {
     height: 0;
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
-    border-bottom: 6px solid black;
+    border-bottom: 6px solid var(--tooltip-bg);
     margin-top: 10px;
     margin-left: 10px;
     position: absolute;
@@ -351,10 +398,10 @@ main form .search_bar input {
     display: none;
     font-size: 10px;
     font-weight: bold;
-    color: white;
+    color: var(--tooltip-text);
     width: 130px;
     height: auto;
-    background-color: black;
+    background-color: var(--tooltip-bg);
     position: absolute;
     padding: 5px 5px;
     top: 41px;
@@ -362,20 +409,9 @@ main form .search_bar input {
     z-index: 2;
 }
 
-.english_page .note_2 {
-    width: 87px;
-    left: -28px;
-}
-
-.france_page .note_2 {
-    width: 140px;
-    left: -53px;
-}
-
-.chinese_page .note_2 {
-    width: 50px;
-    left: -5px;
-}
+.english_page .note_2 { width: 87px; left: -28px; }
+.france_page .note_2 { width: 140px; left: -53px; }
+.chinese_page .note_2 { width: 50px; left: -5px; }
 
 .note_3_container {
     position: relative;
@@ -383,10 +419,7 @@ main form .search_bar input {
     z-index: 1;
 }
 
-.note_3_container:hover .note_3_triangle {
-    display: block;
-}
-
+.note_3_container:hover .note_3_triangle,
 .note_3_container:hover .note_3 {
     display: block;
 }
@@ -397,7 +430,7 @@ main form .search_bar input {
     height: 0;
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
-    border-bottom: 6px solid black;
+    border-bottom: 6px solid var(--tooltip-bg);
     margin-top: 10px;
     margin-left: 10px;
     position: absolute;
@@ -410,10 +443,10 @@ main form .search_bar input {
     display: none;
     font-size: 10px;
     font-weight: bold;
-    color: white;
+    color: var(--tooltip-text);
     width: 125px;
     height: auto;
-    background-color: black;
+    background-color: var(--tooltip-bg);
     position: absolute;
     padding: 5px 5px;
     top: 41px;
@@ -421,25 +454,14 @@ main form .search_bar input {
     z-index: 2;
 }
 
-.english_page .note_3 {
-    width: 90px;
-    left: -26px;
-}
-
-.france_page .note_3 {
-    width: 112px;
-    left: -38px;
-}
-
-.chinese_page .note_3 {
-    width: 50px;
-    left: -5px;
-}
+.english_page .note_3 { width: 90px; left: -26px; }
+.france_page .note_3 { width: 112px; left: -38px; }
+.chinese_page .note_3 { width: 50px; left: -5px; }
 
 .mic_icon {
     width: 25px;
     height: 25px;
-    fill: hsl(0, 0%, 30%);
+    fill: var(--svg-color);
     margin: 12px 7px;
     cursor: pointer;
 }
@@ -447,7 +469,7 @@ main form .search_bar input {
 .camera_icon {
     width: 28px;
     height: 24px;
-    fill: hsl(0, 0%, 30%);
+    fill: var(--svg-color);
     margin: 13px 7px;
     cursor: pointer;
 }
@@ -461,7 +483,7 @@ main form .search_bar input {
     margin-left: 7px;
     margin-right: 10px;
     margin-top: 10px;
-    background-color: hsl(0, 0%, 95%);
+    background-color: var(--bg-ai-mode);
     border-radius: 20px;
     cursor: pointer;
     z-index: 1;
@@ -474,42 +496,26 @@ main form .search_bar input {
 }
 
 @keyframes ai_icon_animation {
-    0% {
-        border-color: red;
-    }
-
-    25% {
-        border-color: blue;
-    }
-
-    50% {
-        border-color: green;
-    }
-
-    75% {
-        border-color: orange;
-    }
-
-    100% {
-        border-color: red;
-    }
+    0% { border-color: var(--ai-anim-1); }
+    25% { border-color: var(--ai-anim-2); }
+    50% { border-color: var(--ai-anim-3); }
+    75% { border-color: var(--ai-anim-4); }
+    100% { border-color: var(--ai-anim-1); }
 }
 
 .ai_search_icon {
     width: 20px;
     height: 20px;
-    width: 20px;
-    height: 20px;
-    fill: hsl(0, 0%, 30%);
+    fill: var(--svg-color);
     margin-right: 5px;
 }
 
 .ai_text {
-    color: black;
+    color: var(--text-primary);
 }
 
 main form .search_bar:hover {
-    box-shadow: 0px 0px 12px 1px hsl(0, 0%, 80%);
+    box-shadow: var(--shadow-search-bar-hover);
 }
 
 main form .button_container {
@@ -525,27 +531,28 @@ main form .button_container {
     padding: 10px 15px;
     margin: 5px;
     margin-top: 15px;
-    border: 1px transparent solid;
+    border: 1px var(--border-search-button) solid;
     border-radius: 5px;
-    background-color: hsl(210, 17%, 97%);
+    background-color: var(--bg-search-button);
+    color: var(--text-primary);
     cursor: pointer;
 }
 
 .button_container .search_on_google:hover,
 .button_container .first_page:hover {
-    border: 1px hsl(0, 0%, 90%) solid;
-    background-color: hsl(210, 17%, 98%);
-    box-shadow: 0px 2px 2px hsl(0, 0%, 90%);
+    border: 1px var(--border-search-button-hover) solid;
+    background-color: var(--bg-search-button-hover);
+    box-shadow: var(--shadow-search-button-hover);
 }
 
 main .support_language {
     margin-top: 40px;
-    color: hsl(0, 0%, 30%);
+    color: var(--text-support-lang);
 }
 
 main .support_language a {
     text-decoration: none;
-    color: hsl(245, 86%, 36%);
+    color: var(--link-color);
 }
 
 main .support_language a:hover {
@@ -554,7 +561,7 @@ main .support_language a:hover {
 
 footer {
     display: block;
-    background-color: hsl(0, 0%, 95%);
+    background-color: var(--bg-footer);
     height: 30%;
 }
 
@@ -562,10 +569,11 @@ footer p {
     font-size: 15px;
     margin-left: 15px;
     padding: 15px;
+    color: var(--text-footer);
 }
 
 .line_1_footer {
-    border-bottom: 1px hsl(0, 0%, 80%) solid;
+    border-bottom: 1px var(--border-footer-line) solid;
     width: 100%;
 }
 
@@ -578,7 +586,7 @@ footer p {
 footer a, footer .settings_text {
     display: inline-block;
     text-decoration: none;
-    color: black;
+    color: var(--text-footer);
     padding-top: 15px;
     padding-bottom: 15px;
     padding-right: 25px;
@@ -602,8 +610,8 @@ footer .settings_menu_container {
     right: 0px;
     padding-top: 7px;
     flex-direction: column;
-    background-color: white;
-    box-shadow: 0px 0px 8px hsl(0, 0%, 70%);
+    background-color: var(--bg-settings-menu);
+    box-shadow: var(--shadow-settings-menu);
     border-radius: 7px;
     z-index: 4;
     text-align: left;
@@ -615,10 +623,11 @@ footer .settings_menu_container a, .dark_mode_off, .dark_mode_on {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: var(--text-footer);
 }
 
 footer .settings_menu_container a:hover, .dark_mode_settings:hover {
-    background-color: hsl(0, 0%, 95%);
+    background-color: var(--bg-settings-menu-hover);
     text-decoration: none;
     cursor: pointer;
 }
@@ -632,7 +641,7 @@ footer .settings_menu_container .dark_mode_settings:hover .dark_mode_on>.moon_ic
 }
 
 footer .settings_menu_container .dark_mode_settings {
-    border-top: 1px hsl(0, 0%, 80%) solid;
+    border-top: 1px var(--border-dark-mode-settings) solid;
     padding: 8px 0px;
     line-height: 25px;
     border-bottom-left-radius: 7px;
@@ -647,9 +656,10 @@ footer .settings_menu_container .dark_mode_settings {
   'opsz' 14;
 }
 
-footer .settings_menu_container .dark_mode_settings .dark_mode_off>.sun_icon, footer .settings_menu_container .dark_mode_settings .dark_mode_on>.moon_icon {
+footer .settings_menu_container .dark_mode_settings .dark_mode_off>.sun_icon, 
+footer .settings_menu_container .dark_mode_settings .dark_mode_on>.moon_icon {
     display: none;
-    color: hsl(0, 0%, 50%);
+    color: var(--icon-dark-mode);
 }
 
 footer .settings_menu_container .dark_mode_settings .dark_mode_on {
