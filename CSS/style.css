@@ -98,7 +98,7 @@
     --bg-search-button-hover: #3c4043;
     --bg-settings-menu: #303134;
     --bg-settings-menu-hover: rgba(255, 255, 255, 0.04);
-    --tooltip-bg: #e8eaed;
+    --tooltip-bg: #0e0e10;
     --bg-search-bar: #4d5156; /* THÊM MỚI: Màu nền của thanh tìm kiếm lúc tắt đèn */
     --bg-search-bar-hover: #5f6368; /* MỚI: Màu nền của thanh tìm kiếm lúc tắt đèn */
 
@@ -108,7 +108,7 @@
     --text-footer: #ffffff;
     --text-support-lang: #9aa0a6;
     --link-color: #8ab4f8;
-    --tooltip-text: #202124;
+    --tooltip-text: #9aa0a6;
 
     /* Màu Icon SVG */
     --svg-color: #9aa0a6;
