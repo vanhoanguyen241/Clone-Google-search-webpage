@@ -135,6 +135,10 @@
     --shadow-settings-menu: 0px 4px 12px rgba(0, 0, 0, 0.5);
 }
 
+.dark_mode header img {
+    filter: brightness(0) invert(1) opacity(0.9);
+}
+
 body {
     min-height: 100vh;
     display: flex;
