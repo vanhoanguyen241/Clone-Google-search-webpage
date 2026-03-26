@@ -32,6 +32,7 @@
     --bg-ai-mode: hsl(0, 0%, 95%);
     --bg-search-button: hsl(210, 17%, 97%);
     --bg-search-button-hover: hsl(210, 17%, 98%);
+    --bg-search-bar: transparent; /* MỚI: Màu nền của thanh tìm kiếm lúc bật đèn */
     --bg-settings-menu: #ffffff;
     --bg-settings-menu-hover: hsl(0, 0%, 95%);
     --tooltip-bg: #000000;
@@ -51,6 +52,7 @@
     /* Màu viền (Border) */
     --border-color: #dadce0;
     --border-search_bar: rgb(215, 215, 215);
+    --border-color-ai-mode: transparent;
     --border-footer-line: hsl(0, 0%, 80%);
     --border-dark-mode-settings: hsl(0, 0%, 80%);
     --border-search-button: transparent;
@@ -67,6 +69,70 @@
     --shadow-search-bar-hover: 0px 0px 12px 1px hsl(0, 0%, 80%);
     --shadow-search-button-hover: 0px 2px 2px hsl(0, 0%, 90%);
     --shadow-settings-menu: 0px 0px 8px hsl(0, 0%, 70%);
+}
+
+/* GIAO DIỆN TỐI */
+.dark_mode {
+    /* THANH NAV */
+    --text-dropdown-menu-container: #8ab4f8; 
+    --menu-hover-bg: #3c3d3d; 
+    --bg-dropdown-menu-container: #303134; 
+    --bg-dropdown-menu-1-2-container: #202124; 
+    --bg-webkit-scrollbar-thumb: #5f6368; 
+    --webkit-scrollbar-thumb-hover-color: #9aa0a6; 
+    --apps-hover-bg: rgba(255, 255, 255, 0.04); 
+    --bg-dropdown-menu-container-button: transparent;
+    --dropdown-menu-container-button-hover-bg: rgba(138, 180, 248, 0.04);
+    --bg-nav-button: #c2e7ff;
+    --nav-button-hover-bg: #b3d7ef;
+    --border-dropdown-menu-container: #5f6368;
+    --border-dropdown-menu-container-button: #8ab4f8;
+    --border-dropdown-menu-container-button-hover: #aecbfa;
+    --shadow-nav-button-hover: 0px 2px 4px rgba(0, 0, 0, 0.5);
+
+    /* Nền tổng thể & Khối */
+    --bg-main: #202124;
+    --bg-footer: #171717;
+    --bg-ai-mode: #4d5156;
+    --bg-search-button: #303134;
+    --bg-search-button-hover: #3c4043;
+    --bg-settings-menu: #303134;
+    --bg-settings-menu-hover: rgba(255, 255, 255, 0.04);
+    --tooltip-bg: #e8eaed;
+    --bg-search-bar: #4d5156; /* THÊM MỚI: Màu nền của thanh tìm kiếm lúc tắt đèn */
+    --bg-search-bar-hover: #5f6368; /* MỚI: Màu nền của thanh tìm kiếm lúc tắt đèn */
+
+    /* Màu chữ */
+    --text-primary: #e8eaed;
+    --text-secondary: #001d35;
+    --text-footer: #ffffff;
+    --text-support-lang: #9aa0a6;
+    --link-color: #8ab4f8;
+    --tooltip-text: #202124;
+
+    /* Màu Icon SVG */
+    --svg-color: #9aa0a6;
+    --icon-dark-mode: #9aa0a6;
+
+    /* Màu viền (Border) */
+    --border-color: #5f6368;
+    --border-search_bar: transparent; /* XÓA VIỀN THANH TÌM KIẾM */
+    --border-color-ai-mode: #94979a;
+    --border-footer-line: #3c4043;
+    --border-dark-mode-settings: #5f6368;
+    --border-search-button: transparent;
+    --border-search-button-hover: #5f6368;
+    
+    --ai-anim-1: #ea4335;
+    --ai-anim-2: #4285f4;
+    --ai-anim-3: #34a853;
+    --ai-anim-4: #fbbc05;
+
+    /* Đổ bóng (Shadow) */
+    --shadow-search-bar: none; 
+    --shadow-search-bar-hover: 0px 1px 5px 1px rgba(0, 0, 0, 0.5);
+    --shadow-search-button-hover: 0px 1px 1px rgba(0, 0, 0, 0.5);
+    --shadow-settings-menu: 0px 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 body {
@@ -285,6 +351,7 @@ main form {
 main form .search_bar {
     display: flex;
     border: 1px var(--border-search_bar) solid;
+    background-color: var(--bg-search-bar, transparent);
     width: 688px;
     height: 50px;
     max-width: 90%;
@@ -484,14 +551,15 @@ main form .search_bar input {
     margin-right: 10px;
     margin-top: 10px;
     background-color: var(--bg-ai-mode);
+    border-width: 1.5px;
+    border-style: solid;
+    border-color: var(--border-color-ai-mode);
     border-radius: 20px;
     cursor: pointer;
     z-index: 1;
 }
 
 .ai_mode:hover {
-    border-width: 1.5px;
-    border-style: solid;
     animation: ai_icon_animation 2s infinite;
 }
 
@@ -516,6 +584,7 @@ main form .search_bar input {
 
 main form .search_bar:hover {
     box-shadow: var(--shadow-search-bar-hover);
+    background-color: var(--bg-search-bar-hover);
 }
 
 main form .button_container {
