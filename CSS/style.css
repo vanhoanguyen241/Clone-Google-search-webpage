@@ -175,7 +175,7 @@ nav .menu svg {
     cursor: pointer;
 }
 
-nav .menu:hover {
+nav .menu:hover, nav .menu .active {
     background-color: var(--menu-hover-bg);
 }
 
