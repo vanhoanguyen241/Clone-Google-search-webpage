@@ -68,9 +68,7 @@ darkModeOn.addEventListener("click", function() {
     document.body.classList.remove("dark_mode");
 });
 
-const sendReport = document.querySelector(".send_report");
-
-sendReport.addEventListener("click", function() {
+function feature_not_work() {
     if (document.body.classList.contains("english_page")) {
         alert("Notice: This feature is currently not supported.");
     }
@@ -83,4 +81,13 @@ sendReport.addEventListener("click", function() {
     else {
         alert("Thông báo: Tính năng này hiện chưa được hỗ trợ.");
     }
-});
+};
+
+const sendReport = document.querySelector(".send_report");
+const keyboard = document.querySelector(".keyboard_icon");
+const micro = document.querySelector(".mic_icon");
+const camera = document.querySelector(".camera_icon");
+sendReport.addEventListener("click", feature_not_work);
+keyboard.addEventListener("click", feature_not_work);
+micro.addEventListener("click", feature_not_work);
+camera.addEventListener("click", feature_not_work);
