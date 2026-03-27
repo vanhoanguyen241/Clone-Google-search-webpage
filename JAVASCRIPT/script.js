@@ -91,3 +91,19 @@ sendReport.addEventListener("click", feature_not_work);
 keyboard.addEventListener("click", feature_not_work);
 micro.addEventListener("click", feature_not_work);
 camera.addEventListener("click", feature_not_work);
+
+const ai_mode = document.querySelector(".ai_mode");
+ai_mode.addEventListener("click",function(){
+    base_url = "https://www.google.com/search?udm=50";
+    lang = "vi";
+    if (document.body.classList.contains("english_page")) {
+        lang = "en";
+    }
+    else if (document.body.classList.contains("france_page")) {
+        lang = "fr";
+    }
+    else if (document.body.classList.contains("chinese_page")) {
+        lang = "zh-TW";
+    }
+    window.location.href = base_url + "&hl=" + lang;
+});
