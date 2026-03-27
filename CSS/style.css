@@ -194,7 +194,7 @@ nav .note_4>span {
     font-size: 11px;
 }
 
-nav .menu:hover, nav .menu .active {
+nav .menu:hover, nav .menu.active {
     background-color: var(--menu-hover-bg);
 }
 
