@@ -179,8 +179,31 @@ nav .menu svg {
     cursor: pointer;
 }
 
+nav .note_4 {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    top: 55px;
+    background-color: var(--tooltip-bg);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+nav .note_4>span {
+    color: var(--tooltip-text);
+    font-size: 11px;
+}
+
 nav .menu:hover, nav .menu .active {
     background-color: var(--menu-hover-bg);
+}
+
+nav .menu:hover .note_4 {
+    display: inline-block;
+}
+
+nav .menu.active:hover .note_4 {
+    display: none;
 }
 
 nav .dropdown_menu_container {
