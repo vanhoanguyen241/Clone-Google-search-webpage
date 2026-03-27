@@ -1,4 +1,5 @@
-document.getElementById("search_input").addEventListener("keydown", function(event) {
+/* Chuyển hướng khi người dùng tìm kiếm */
+document.getElementById("search_input").addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
         event.preventDefault();
         query = document.getElementById("search_input").value;
@@ -9,10 +10,11 @@ document.getElementById("search_input").addEventListener("keydown", function(eve
     }
 });
 
+/* Menu 9 chấm ở thanh nav */
 const menu = document.getElementsByClassName("menu")[0];
 const dropdown = document.getElementsByClassName("dropdown_menu_container")[0];
 
-menu.addEventListener("click", function() {
+menu.addEventListener("click", function () {
     if (dropdown.style.display === "none" || dropdown.style.display === "") {
         dropdown.style.display = "block";
         menu.classList.add("active");
@@ -22,23 +24,24 @@ menu.addEventListener("click", function() {
     }
 });
 
-dropdown.addEventListener("click", function(event) {
-    event.stopPropagation(); 
+dropdown.addEventListener("click", function (event) {
+    event.stopPropagation();
 });
 
-document.addEventListener("click", function(event) {
+document.addEventListener("click", function (event) {
     if (!menu.contains(event.target) && !dropdown.contains(event.target)) {
-    dropdown.style.display = "none";
-    menu.classList.remove("active");
+        dropdown.style.display = "none";
+        menu.classList.remove("active");
     }
 });
 
+/* Menu cài đặt ở footer */
 const settings = document.getElementsByClassName("settings")[0];
 const settingsMenu = document.getElementsByClassName("settings_menu_container")[0];
 const darkModeOff = document.querySelector(".dark_mode_off");
 const darkModeOn = document.querySelector(".dark_mode_on");
 
-settings.addEventListener("click", function() {
+settings.addEventListener("click", function () {
     if (settingsMenu.style.display === "none" || settingsMenu.style.display === "") {
         settingsMenu.style.display = "block";
     } else {
@@ -46,28 +49,30 @@ settings.addEventListener("click", function() {
     }
 });
 
-settingsMenu.addEventListener("click", function(event) {
-    event.stopPropagation(); 
+settingsMenu.addEventListener("click", function (event) {
+    event.stopPropagation();
 });
 
-document.addEventListener("click", function(event) {
+document.addEventListener("click", function (event) {
     if (!settings.contains(event.target) && !settingsMenu.contains(event.target)) {
-    settingsMenu.style.display = "none";
+        settingsMenu.style.display = "none";
     }
 });
 
-darkModeOff.addEventListener("click", function() {
+/* Chế độ tối */
+darkModeOff.addEventListener("click", function () {
     darkModeOff.style.display = "none";
     darkModeOn.style.display = "flex";
     document.body.classList.add("dark_mode");
 });
 
-darkModeOn.addEventListener("click", function() {
+darkModeOn.addEventListener("click", function () {
     darkModeOn.style.display = "none";
     darkModeOff.style.display = "flex";
     document.body.classList.remove("dark_mode");
 });
 
+/* Các tính năng không hỗ trợ */
 function feature_not_work() {
     if (document.body.classList.contains("english_page")) {
         alert("Notice: This feature is currently not supported.");
@@ -92,8 +97,9 @@ keyboard.addEventListener("click", feature_not_work);
 micro.addEventListener("click", feature_not_work);
 camera.addEventListener("click", feature_not_work);
 
+/* Chuyển hướng khi nhấp vào nút AI */
 const ai_mode = document.querySelector(".ai_mode");
-ai_mode.addEventListener("click",function(){
+ai_mode.addEventListener("click", function () {
     base_url = "https://www.google.com/search?udm=50";
     lang = "vi";
     if (document.body.classList.contains("english_page")) {

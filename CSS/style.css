@@ -32,7 +32,7 @@
     --bg-ai-mode: hsl(0, 0%, 95%);
     --bg-search-button: hsl(210, 17%, 97%);
     --bg-search-button-hover: hsl(210, 17%, 98%);
-    --bg-search-bar: transparent; /* MỚI: Màu nền của thanh tìm kiếm lúc bật đèn */
+    --bg-search-bar: transparent;
     --bg-settings-menu: #ffffff;
     --bg-settings-menu-hover: hsl(0, 0%, 95%);
     --tooltip-bg: #000000;
@@ -57,7 +57,7 @@
     --border-dark-mode-settings: hsl(0, 0%, 80%);
     --border-search-button: transparent;
     --border-search-button-hover: hsl(0, 0%, 90%);
-    
+
     /* Màu viền khi hover AI Mode */
     --ai-anim-1: red;
     --ai-anim-2: blue;
@@ -74,13 +74,13 @@
 /* GIAO DIỆN TỐI */
 .dark_mode {
     /* THANH NAV */
-    --text-dropdown-menu-container: #8ab4f8; 
-    --menu-hover-bg: #3c3d3d; 
-    --bg-dropdown-menu-container: #303134; 
-    --bg-dropdown-menu-1-2-container: #202124; 
-    --bg-webkit-scrollbar-thumb: #5f6368; 
-    --webkit-scrollbar-thumb-hover-color: #9aa0a6; 
-    --apps-hover-bg: rgba(255, 255, 255, 0.04); 
+    --text-dropdown-menu-container: #8ab4f8;
+    --menu-hover-bg: #3c3d3d;
+    --bg-dropdown-menu-container: #303134;
+    --bg-dropdown-menu-1-2-container: #202124;
+    --bg-webkit-scrollbar-thumb: #5f6368;
+    --webkit-scrollbar-thumb-hover-color: #9aa0a6;
+    --apps-hover-bg: rgba(255, 255, 255, 0.04);
     --bg-dropdown-menu-container-button: transparent;
     --dropdown-menu-container-button-hover-bg: rgba(138, 180, 248, 0.04);
     --bg-nav-button: #c2e7ff;
@@ -99,8 +99,8 @@
     --bg-settings-menu: #303134;
     --bg-settings-menu-hover: rgba(255, 255, 255, 0.04);
     --tooltip-bg: #0e0e10;
-    --bg-search-bar: #4d5156; /* THÊM MỚI: Màu nền của thanh tìm kiếm lúc tắt đèn */
-    --bg-search-bar-hover: #5f6368; /* MỚI: Màu nền của thanh tìm kiếm lúc tắt đèn */
+    --bg-search-bar: #4d5156;
+    --bg-search-bar-hover: #5f6368;
 
     /* Màu chữ */
     --text-primary: #e8eaed;
@@ -116,20 +116,20 @@
 
     /* Màu viền (Border) */
     --border-color: #5f6368;
-    --border-search_bar: transparent; /* XÓA VIỀN THANH TÌM KIẾM */
+    --border-search_bar: transparent;
     --border-color-ai-mode: #94979a;
     --border-footer-line: #3c4043;
     --border-dark-mode-settings: #5f6368;
     --border-search-button: transparent;
     --border-search-button-hover: #5f6368;
-    
+
     --ai-anim-1: #ea4335;
     --ai-anim-2: #4285f4;
     --ai-anim-3: #34a853;
     --ai-anim-4: #fbbc05;
 
     /* Đổ bóng (Shadow) */
-    --shadow-search-bar: none; 
+    --shadow-search-bar: none;
     --shadow-search-bar-hover: 0px 1px 5px 1px rgba(0, 0, 0, 0.5);
     --shadow-search-button-hover: 0px 1px 1px rgba(0, 0, 0, 0.5);
     --shadow-settings-menu: 0px 4px 12px rgba(0, 0, 0, 0.5);
@@ -194,7 +194,8 @@ nav .note_4>span {
     font-size: 11px;
 }
 
-nav .menu:hover, nav .menu.active {
+nav .menu:hover,
+nav .menu.active {
     background-color: var(--menu-hover-bg);
 }
 
@@ -226,7 +227,8 @@ nav .dropdown_menu_1_container {
     margin-bottom: 5px;
 }
 
-nav .dropdown_menu_1_container, nav .dropdown_menu_2_container {
+nav .dropdown_menu_1_container,
+nav .dropdown_menu_2_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     background-color: var(--bg-dropdown-menu-1-2-container);
@@ -246,7 +248,7 @@ nav .dropdown_menu_container::-webkit-scrollbar {
 }
 
 nav .dropdown_menu_container::-webkit-scrollbar-track {
-    background: transparent; 
+    background: transparent;
     border-radius: 10px;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -503,9 +505,20 @@ main form .search_bar input {
     z-index: 2;
 }
 
-.english_page .note_2 { width: 87px; left: -28px; }
-.france_page .note_2 { width: 140px; left: -53px; }
-.chinese_page .note_2 { width: 50px; left: -5px; }
+.english_page .note_2 {
+    width: 87px;
+    left: -28px;
+}
+
+.france_page .note_2 {
+    width: 140px;
+    left: -53px;
+}
+
+.chinese_page .note_2 {
+    width: 50px;
+    left: -5px;
+}
 
 .note_3_container {
     position: relative;
@@ -548,9 +561,20 @@ main form .search_bar input {
     z-index: 2;
 }
 
-.english_page .note_3 { width: 90px; left: -26px; }
-.france_page .note_3 { width: 112px; left: -38px; }
-.chinese_page .note_3 { width: 50px; left: -5px; }
+.english_page .note_3 {
+    width: 90px;
+    left: -26px;
+}
+
+.france_page .note_3 {
+    width: 112px;
+    left: -38px;
+}
+
+.chinese_page .note_3 {
+    width: 50px;
+    left: -5px;
+}
 
 .mic_icon {
     width: 25px;
@@ -591,11 +615,25 @@ main form .search_bar input {
 }
 
 @keyframes ai_icon_animation {
-    0% { border-color: var(--ai-anim-1); }
-    25% { border-color: var(--ai-anim-2); }
-    50% { border-color: var(--ai-anim-3); }
-    75% { border-color: var(--ai-anim-4); }
-    100% { border-color: var(--ai-anim-1); }
+    0% {
+        border-color: var(--ai-anim-1);
+    }
+
+    25% {
+        border-color: var(--ai-anim-2);
+    }
+
+    50% {
+        border-color: var(--ai-anim-3);
+    }
+
+    75% {
+        border-color: var(--ai-anim-4);
+    }
+
+    100% {
+        border-color: var(--ai-anim-1);
+    }
 }
 
 .ai_search_icon {
@@ -679,7 +717,8 @@ footer p {
     padding: 0px 30px;
 }
 
-footer a, footer .settings_text {
+footer a,
+footer .settings_text {
     display: inline-block;
     text-decoration: none;
     color: var(--text-footer);
@@ -689,7 +728,8 @@ footer a, footer .settings_text {
     cursor: pointer;
 }
 
-footer a:hover, footer .settings_text:hover {
+footer a:hover,
+footer .settings_text:hover {
     text-decoration: underline;
 }
 
@@ -713,7 +753,9 @@ footer .settings_menu_container {
     text-align: left;
 }
 
-footer .settings_menu_container a, .dark_mode_off, .dark_mode_on {
+footer .settings_menu_container a,
+.dark_mode_off,
+.dark_mode_on {
     padding: 8px 15px;
     font-size: 14px;
     display: flex;
@@ -722,7 +764,8 @@ footer .settings_menu_container a, .dark_mode_off, .dark_mode_on {
     color: var(--text-footer);
 }
 
-footer .settings_menu_container a:hover, .dark_mode_settings:hover {
+footer .settings_menu_container a:hover,
+.dark_mode_settings:hover {
     background-color: var(--bg-settings-menu-hover);
     text-decoration: none;
     cursor: pointer;
@@ -745,14 +788,14 @@ footer .settings_menu_container .dark_mode_settings {
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 10,
-  'wght' 300,
-  'GRAD' 0,
-  'opsz' 14;
+    font-variation-settings:
+        'FILL' 10,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 14;
 }
 
-footer .settings_menu_container .dark_mode_settings .dark_mode_off>.sun_icon, 
+footer .settings_menu_container .dark_mode_settings .dark_mode_off>.sun_icon,
 footer .settings_menu_container .dark_mode_settings .dark_mode_on>.moon_icon {
     display: none;
     color: var(--icon-dark-mode);
