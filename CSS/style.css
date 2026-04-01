@@ -708,8 +708,18 @@ footer p {
 }
 
 .line_1_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     border-bottom: 1px var(--border-footer-line) solid;
     width: 100%;
+}
+
+.line_1_footer p:last-child {
+    margin-right: 5px;
+    font-weight: bold;
+    /* Tự động xuống dòng nếu cảnh báo quá dài trên điện thoại */
+    word-break: break-word;
 }
 
 .footer_links {
