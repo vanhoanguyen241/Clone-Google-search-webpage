@@ -297,6 +297,7 @@ nav .apps:hover>p {
 nav .apps>img {
     height: 35px;
     width: 35px;
+    object-fit: contain; /*Giữ nguyên tỉ lệ ảnh*/
     margin-bottom: 15px;
     border-radius: 0;
 }
