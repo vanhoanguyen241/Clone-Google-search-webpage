@@ -930,6 +930,17 @@ footer .settings_menu_container .dark_mode_settings .dark_mode_on {
         height: 2.2rem;
     }
 
+    /* Ẩn toàn bộ chú thích (tooltips) trên điện thoại */
+    .note_1_container:hover .note_1_triangle,
+    .note_1_container:hover .note_1,
+    .note_2_container:hover .note_2_triangle,
+    .note_2_container:hover .note_2,
+    .note_3_container:hover .note_3_triangle,
+    .note_3_container:hover .note_3,
+    nav .menu:hover .note_4 {
+        display: none !important;
+    }
+
     .button_container .search_on_google,
     .button_container .first_page {
         width: 100%;
