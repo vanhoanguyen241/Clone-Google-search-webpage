@@ -817,3 +817,134 @@ footer .settings_menu_container .dark_mode_settings .dark_mode_on>.moon_icon {
 footer .settings_menu_container .dark_mode_settings .dark_mode_on {
     display: none;
 }
+
+/* RESPONSIVE (LAPTOP, TABLET, MOBILE) */
+
+/* 1. LAPTOP & TABLET NGANG (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 58%;
+    }
+    nav .dropdown_menu_container {
+        right: 1rem;
+    }
+}
+
+/* 2. TABLET DỌC (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 54%;
+    }
+    .footer_links {
+        padding: 0 1.5rem;
+    }
+    footer a, 
+    footer .settings_text {
+        padding-right: 1.5rem;
+    }
+    /* Chuyển menu ứng dụng từ 3 cột xuống 2 cột cho đỡ chật */
+    nav .dropdown_menu_1_container,
+    nav .dropdown_menu_2_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 3. MOBILE & MÀN HÌNH NHỎ (max-width: 600px) */
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 50%;
+    }
+    
+    /* Ẩn chữ Gmail và Hình ảnh để tiết kiệm không gian */
+    nav > a {
+        display: none; 
+    }
+    
+    header img {
+        height: 9rem;
+    }
+
+    /* Ép 2 nút tìm kiếm thành 1 cột dọc và kéo dài ra */
+    main form .button_container {
+        flex-direction: column;
+        width: 90%;
+        gap: 0;
+    }
+
+    /* Kéo dài thanh search ra thêm chút nữa */
+    main form .search_bar {
+        width: 95%; 
+        padding: 0 0.5rem;
+    }
+
+    /* Ẩn icon Bàn phím (Mobile không cần cái này) */
+    .keyboard_icon {
+        display: none;
+    }
+
+    /* Thu gọn các icon Mic và Camera cho đỡ chật */
+    .mic_icon, 
+    .camera_icon {
+        width: 2.2rem;
+        height: 2.2rem;
+        margin: 1.3rem 0.3rem; /* Giảm khoảng cách giữa các icon */
+    }
+
+    /* Thu nhỏ nút "Chế độ AI" (Giấu chữ, giữ Icon) */
+    .ai_text {
+        display: none; /* Ẩn chữ "Chế độ AI" đi */
+    }
+    .ai_mode {
+        width: 3.5rem; /* Bóp chiều rộng lại chỉ vừa cái vòng tròn */
+        height: 3.5rem;
+        border-radius: 50%; /* Cho thành hình tròn*/
+        margin-top: 0.7rem;
+        margin-left: 0.2rem;
+        margin-right: 0.5rem;
+        padding: 0;
+    }
+    .ai_search_icon {
+        margin-right: 0; /* Bỏ khoảng cách thừa */
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+
+    .button_container .search_on_google, 
+    .button_container .first_page {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    /* Căn giữa Footer line 1 */
+    .line_1_footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem 0;
+        gap: 0.5rem;
+    }
+    .line_1_footer p {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    /* Đưa toàn bộ link footer ra giữa, cho phép rớt dòng */
+    .footer_links {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+    .left_links, 
+    .right_links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Đưa menu cài đặt ra giữa màn hình thay vì sát mép phải */
+    footer .settings_menu_container {
+        right: 50%;
+        transform: translateX(50%);
+        bottom: 5.5rem;
+    }
+}
