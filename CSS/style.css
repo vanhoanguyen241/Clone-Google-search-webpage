@@ -831,6 +831,10 @@ footer .settings_menu_container .dark_mode_settings .dark_mode_on {
     nav .dropdown_menu_container {
         right: 1rem;
     }
+
+    footer .settings_menu_container .dark_mode_settings {
+        line-height: 2.2rem;
+    }
 }
 
 /* 2. TABLET DỌC (max-width: 768px) */
@@ -846,6 +850,10 @@ footer .settings_menu_container .dark_mode_settings .dark_mode_on {
     footer a,
     footer .settings_text {
         padding-right: 1.5rem;
+    }
+
+    footer .settings_menu_container .dark_mode_settings {
+        line-height: 2.5rem;
     }
 
     /* Chuyển menu ứng dụng từ 3 cột xuống 2 cột cho đỡ chật */
@@ -961,5 +969,9 @@ footer .settings_menu_container .dark_mode_settings .dark_mode_on {
         right: 50%;
         transform: translateX(50%);
         bottom: 5.5rem;
+    }
+
+    footer .settings_menu_container .dark_mode_settings {
+        line-height: 2.5rem;
     }
 }
