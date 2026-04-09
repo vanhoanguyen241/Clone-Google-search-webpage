@@ -150,7 +150,8 @@ body {
     background-color: var(--bg-main);
 }
 
-input, button {
+input,
+button {
     font-family: inherit;
     font-size: inherit;
     color: inherit;
@@ -307,7 +308,8 @@ nav .apps:hover>p {
 nav .apps>img {
     height: 3.5rem;
     width: 3.5rem;
-    object-fit: contain; /*Giữ nguyên tỉ lệ ảnh*/
+    object-fit: contain;
+    /*Giữ nguyên tỉ lệ ảnh*/
     margin-bottom: 1.5rem;
     border-radius: 0;
 }
@@ -825,6 +827,7 @@ footer .settings_menu_container .dark_mode_settings .dark_mode_on {
     html {
         font-size: 58%;
     }
+
     nav .dropdown_menu_container {
         right: 1rem;
     }
@@ -835,13 +838,16 @@ footer .settings_menu_container .dark_mode_settings .dark_mode_on {
     html {
         font-size: 54%;
     }
+
     .footer_links {
         padding: 0 1.5rem;
     }
-    footer a, 
+
+    footer a,
     footer .settings_text {
         padding-right: 1.5rem;
     }
+
     /* Chuyển menu ứng dụng từ 3 cột xuống 2 cột cho đỡ chật */
     nav .dropdown_menu_1_container,
     nav .dropdown_menu_2_container {
@@ -854,12 +860,12 @@ footer .settings_menu_container .dark_mode_settings .dark_mode_on {
     html {
         font-size: 50%;
     }
-    
+
     /* Ẩn chữ Gmail và Hình ảnh để tiết kiệm không gian */
-    nav > a {
-        display: none; 
+    nav>a {
+        display: none;
     }
-    
+
     header img {
         height: 9rem;
     }
@@ -873,7 +879,7 @@ footer .settings_menu_container .dark_mode_settings .dark_mode_on {
 
     /* Kéo dài thanh search ra thêm chút nữa */
     main form .search_bar {
-        width: 95%; 
+        width: 95%;
         padding: 0 0.5rem;
     }
 
@@ -883,33 +889,40 @@ footer .settings_menu_container .dark_mode_settings .dark_mode_on {
     }
 
     /* Thu gọn các icon Mic và Camera cho đỡ chật */
-    .mic_icon, 
+    .mic_icon,
     .camera_icon {
         width: 2.2rem;
         height: 2.2rem;
-        margin: 1.3rem 0.3rem; /* Giảm khoảng cách giữa các icon */
+        margin: 1.3rem 0.3rem;
+        /* Giảm khoảng cách giữa các icon */
     }
 
     /* Thu nhỏ nút "Chế độ AI" (Giấu chữ, giữ Icon) */
     .ai_text {
-        display: none; /* Ẩn chữ "Chế độ AI" đi */
+        display: none;
+        /* Ẩn chữ "Chế độ AI" đi */
     }
+
     .ai_mode {
-        width: 3.5rem; /* Bóp chiều rộng lại chỉ vừa cái vòng tròn */
+        width: 3.5rem;
+        /* Bóp chiều rộng lại chỉ vừa cái vòng tròn */
         height: 3.5rem;
-        border-radius: 50%; /* Cho thành hình tròn*/
+        border-radius: 50%;
+        /* Cho thành hình tròn*/
         margin-top: 0.7rem;
         margin-left: 0.2rem;
         margin-right: 0.5rem;
         padding: 0;
     }
+
     .ai_search_icon {
-        margin-right: 0; /* Bỏ khoảng cách thừa */
+        margin-right: 0;
+        /* Bỏ khoảng cách thừa */
         width: 2.2rem;
         height: 2.2rem;
     }
 
-    .button_container .search_on_google, 
+    .button_container .search_on_google,
     .button_container .first_page {
         width: 100%;
         margin: 0.5rem 0;
@@ -922,6 +935,7 @@ footer .settings_menu_container .dark_mode_settings .dark_mode_on {
         padding: 1.5rem 0;
         gap: 0.5rem;
     }
+
     .line_1_footer p {
         margin: 0;
         padding: 0;
@@ -934,7 +948,8 @@ footer .settings_menu_container .dark_mode_settings .dark_mode_on {
         align-items: center;
         padding-bottom: 2rem;
     }
-    .left_links, 
+
+    .left_links,
     .right_links {
         display: flex;
         flex-wrap: wrap;
