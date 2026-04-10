@@ -193,7 +193,7 @@ nav .menu svg {
 nav .note_4 {
     position: absolute;
     display: none;
-    z-index: 21;
+    z-index: 1;
     top: 5.5rem;
     background-color: var(--tooltip-bg);
     padding: 0.5rem;
@@ -227,7 +227,7 @@ nav .dropdown_menu_container {
     border: 1px var(--border-dropdown-menu-container) solid;
     border-radius: 30px;
     padding: 1rem 0.2rem 1rem 1rem;
-    z-index: 10;
+    z-index: 3;
     text-align: center;
     overflow-y: auto;
     max-width: 35rem;
@@ -433,7 +433,7 @@ main form .search_bar input {
 .note_1_container {
     position: relative;
     display: inline-block;
-    z-index: 20;
+    z-index: 1;
 }
 
 .note_1_container:hover .note_1_triangle,
@@ -453,7 +453,7 @@ main form .search_bar input {
     position: absolute;
     top: 2.6rem;
     left: 0.55rem;
-    z-index: 21;
+    z-index: 2;
 }
 
 .note_1 {
@@ -468,7 +468,7 @@ main form .search_bar input {
     padding: 0.5rem 0.5rem;
     top: 4.1rem;
     left: -2rem;
-    z-index: 21;
+    z-index: 2;
 }
 
 .english_page .keyboard_icon,
@@ -480,7 +480,7 @@ main form .search_bar input {
 .note_2_container {
     position: relative;
     display: inline-block;
-    z-index: 20;
+    z-index: 1;
 }
 
 .note_2_container:hover .note_2_triangle,
@@ -500,7 +500,7 @@ main form .search_bar input {
     position: absolute;
     top: 2.6rem;
     left: 0.3rem;
-    z-index: 21;
+    z-index: 2;
 }
 
 .note_2 {
@@ -515,7 +515,7 @@ main form .search_bar input {
     padding: 0.5rem 0.5rem;
     top: 4.1rem;
     left: -4.7rem;
-    z-index: 21;
+    z-index: 2;
 }
 
 .english_page .note_2 {
@@ -536,7 +536,7 @@ main form .search_bar input {
 .note_3_container {
     position: relative;
     display: inline-block;
-    z-index: 20;
+    z-index: 1;
 }
 
 .note_3_container:hover .note_3_triangle,
@@ -556,7 +556,7 @@ main form .search_bar input {
     position: absolute;
     top: 2.6rem;
     left: 0.5rem;
-    z-index: 21;
+    z-index: 2;
 }
 
 .note_3 {
@@ -571,7 +571,7 @@ main form .search_bar input {
     padding: 0.5rem 0.5rem;
     top: 4.1rem;
     left: -4.2rem;
-    z-index: 21;
+    z-index: 2;
 }
 
 .english_page .note_3 {
@@ -772,7 +772,7 @@ footer .settings_menu_container {
     background-color: var(--bg-settings-menu);
     box-shadow: var(--shadow-settings-menu);
     border-radius: 7px;
-    z-index: 10;
+    z-index: 4;
     text-align: left;
 }
 
