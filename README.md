@@ -33,10 +33,10 @@ Giao diện được thiết kế để hiển thị tốt trên cả Desktop, T
    git clone https://github.com/vanhoanguyen241/Clone-Google-search-webpage.git
 2. Mở file index.html bằng trình duyệt bất kỳ.
 
-## 🔗 Tuyên bố miễn trừ trách nhiệm (Disclaimer)
+## Tuyên bố miễn trừ trách nhiệm (Disclaimer)
 Dự án này chỉ phục vụ mục đích HỌC TẬP (Educational Purposes Only).
 - Toàn bộ logo, icon và thiết kế thuộc bản quyền của Google LLC.
 - Dự án không nhằm mục đích thương mại hay mạo danh Google.
 
-# 🔗 AUTHOR
+# AUTHOR
 - [Nguyễn Văn Hòa](https://github.com/vanhoanguyen241)
